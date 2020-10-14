@@ -1,3 +1,6 @@
+let room;
+let pc;
+
 function onSuccess() {};
 function onError(error) {
   console.error(error);
@@ -92,9 +95,6 @@ const configuration = {
     urls: 'stun:stun.l.google.com:19302'
   }]
 };
-
-let room;
-let pc;
 
 //Subscribe a roomName in ScaleDrone
 drone.on('open', error => {
